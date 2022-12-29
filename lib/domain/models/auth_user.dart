@@ -1,5 +1,9 @@
 class AuthUser {
   final String id;
+  final String email;
 
-  AuthUser({required this.id});
+  AuthUser({
+    required this.id,
+    required this.email,
+  });
 }

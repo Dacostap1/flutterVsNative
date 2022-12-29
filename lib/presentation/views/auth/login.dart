@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_vs_native/presentation/cubit/auth/auth_cubit.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -80,7 +82,9 @@ class _LoginPageState extends State<LoginPage> {
                 fixedSize: const Size(120, 40),
               ),
               onPressed: () {
-                Navigator.pushReplacementNamed(context, 'home');
+                context.read<AuthCubit>().login(
+                    email: _emailController.text,
+                    password: _passwordController.text);
               },
               child: const Text('Entrar'),
             ),

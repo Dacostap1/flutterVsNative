@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "900834578203",
+    "project_id": "iosnative-9791f",
+    "storage_bucket": "iosnative-9791f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900834578203:android:5e205a8590576072ebcdbe",
+        "android_client_info": {
+          "package_name": "com.example.flutter_vs_native"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900834578203-s7ods06soi73056rgg9um3rn02ipq9ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChpyEkCJoLJiAxcIDLgcssEPkUJ2CFjE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900834578203-s7ods06soi73056rgg9um3rn02ipq9ha.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "900834578203-u88klglc2mom12rgm7eb223ao3ooefk1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dacosta.firebase.FirebaseResponsiveApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

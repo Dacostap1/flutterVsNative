@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_vs_native/domain/models/game.dart';
-import 'package:flutter_vs_native/presentation/widgets/game_card.dart';
+import 'package:flutter_vs_native/presentation/cubit/auth/auth_cubit.dart';
+import 'package:flutter_vs_native/presentation/views/widgets/game_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -81,11 +83,7 @@ class _MyDrawerState extends State<MyDrawer> {
           ),
           const SizedBox(height: 20),
           ListTile(
-            onTap: () => Navigator.pushNamedAndRemoveUntil(
-              context,
-              'login',
-              (route) => false,
-            ),
+            onTap: context.read<AuthCubit>().logout,
             title: Text(
               'Salir',
               style: Theme.of(context)
