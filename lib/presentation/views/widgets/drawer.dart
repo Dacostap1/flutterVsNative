@@ -54,7 +54,7 @@ class _MyDrawerState extends State<MyDrawer> {
                 Navigator.pop(context);
               },
               title: Text(
-                item.name,
+                item.label,
                 style: Theme.of(context)
                     .textTheme
                     .labelLarge

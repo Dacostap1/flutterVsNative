@@ -42,8 +42,8 @@ enum PlatformGame {
   xbox('Xbox'),
   nintendo('Nintendo');
 
-  const PlatformGame(this.message);
-  final String message;
+  const PlatformGame(this.label);
+  final String label;
 }
 
 class EditParameters {

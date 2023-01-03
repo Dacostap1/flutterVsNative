@@ -96,7 +96,7 @@ class _CreateGamePageState extends State<CreateGamePage> {
                     itemSelected = index;
                     setState(() {});
                   },
-                  itemBuilder: ((context, index) => Text(items[index].name)),
+                  itemBuilder: ((context, index) => Text(items[index].label)),
                   childCount: items.length,
                 ),
               ),
