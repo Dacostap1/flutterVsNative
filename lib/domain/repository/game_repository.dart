@@ -1,11 +1,14 @@
 import 'package:flutter_vs_native/domain/models/game.dart';
 
 abstract class GameRepository {
-  Stream<List<Game>> get doctorList;
+  Stream<List<Game>> getGameStream(String platform);
 
-  Future<void> save({
+  Stream<List<Game>> get gamesStream;
+
+  Future<void> create({
     required String title,
     required String desc,
+    required String platform,
     required String imageUrl,
   });
 
@@ -13,10 +16,12 @@ abstract class GameRepository {
     required String gameId,
     required String title,
     required String desc,
+    required String platform,
     required String imageUrl,
   });
 
-  Future<void> deleteDoctor({
+  Future<void> deleteGame({
     required String gameId,
+    required String platform,
   });
 }
